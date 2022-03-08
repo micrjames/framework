@@ -28,6 +28,21 @@ All of the features that are included in this project help automate and allow th
 * Transpile Sass code to CSS.
 * Build a production version of the website or web app so as to be transferred to a production server.
 ## Setup
+Setting up the project involves initializing the template files of a basic web app being scaffolded and made ready to be run on the development server. This project requires node and npm to be installed. Also, gulp-cli needs to be installed in order to instantiate the gulp tasks directly. Otherwise, a script to run the necessary gulp task should be added to the package.json file. So, for best practices, start by installing gulp-cli globally.
+```
+npm install -g gulp-cli
+```
+Next, install the dependencies needed for the project through npm
+```
+cp -r framework <project-identifier>
+cd <project-identifier>
+npm install
+```
+(where <project-identifier> is the name of the project to be developed). Finally, to complete the project setup, initialize the project.
+```
+gulp init
+```
+The template files are then copied to the /src folder in place so that the project can be run and/or watched for changes on the development server.
 ## Usage
 ## Project Status
 ## Room for Improvement
