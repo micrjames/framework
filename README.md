@@ -44,8 +44,35 @@ gulp init
 ```
 The template files are then copied to the /src folder in place so that the project can be run and/or watched for changes on the development server.
 ## Usage
+For the implementations of the features listed above, there are a number of use cases provided by this project:
+* As for the default feature of the framework, we can spin up a development server, where any changes made to the code are updated to the screen.
+```
+gulp
+```
+* Similary, a server that can be used for the purposes of viewing the project on the screen and present it for testing purposes, perhaps, can also be instantiated.
+```
+gulp start
+```
+* The Scss code for the project can be transpiled, which copies the transpiled css code to the /css folder in a file under the same name.
+```
+gulp sass
+```
+* A production build of the app can be created so that the project will be made ready for installation to a production server.
+```
+gulp build
+```
+* A listing of the above use cases can be displayed to the screen, in case the user forgets any of the above.
+```
+gulp help
+```
 ## Project Status
+This project is currently in progress in that it will updated at some point in the future. Either, to update the code to work with updates to the underlying Gulpjs or Browser-sync codebase, or to add features that reflect the current workflow used in web app development.
 ## Room for Improvement
+As described in the Project Status section, in the future, features may be added to update the codebase of the project. The following are some of those features:
+* Linting for CSS and JavaScript helps to write code more efficiently, since some of the issues that the user may come across would more likely be found earlier at some point during development.
+* Minification can help keep large CSS and JavaScript file sizes down and help with larger projects working more smoothly.
+* Other areas may be found to improve the project depending on how the workflow of web development may change in the future.
 ## Acknowledgements
 This project is based on youtube tutorials watched while learning web development. One example, in particular, is a tutorial from codercoder, which can be found [here](https://www.youtube.com/watch?v=q0E1hbcj-NI). However, those videos included code based on older versions of Gulpjs. This project was built by following the Gulpjs documentation and requirements needs from development workflow at that time.
 ## Contact
+Feel free to contact me @michaelrjamesjr on twitter or on github @micrjames
