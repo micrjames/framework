@@ -75,4 +75,4 @@ As described in the Project Status section, in the future, features may be added
 ## Acknowledgements
 This project is based on youtube tutorials watched while learning web development. One example, in particular, is a tutorial from codercoder, which can be found [here](https://www.youtube.com/watch?v=q0E1hbcj-NI). However, those videos included code based on older versions of Gulpjs. This project was built by following the Gulpjs documentation and requirements needs from development workflow at that time.
 ## Contact
-Feel free to contact me @michaelrjamesjr on twitter or on github @micrjames
+Feel free to contact me @michaelrjamesjr on twitter or on github @micrjames or check out my blog at [hashnode](michaelrjames.hashnode.dev)
