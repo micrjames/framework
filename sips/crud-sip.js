@@ -20,6 +20,10 @@ exports.initTask = cb => {
 	src('template/scss/*.scss')
 		.pipe(dest('./src/scss'));
 
+   	// then, remove the unneeded template source files
+    console.log('\nRemoving template source files ...\n');
+	del(['template/**/**', 'template']); 
+
 	// signal async completion	
 	cb();
 };
@@ -51,7 +55,7 @@ exports.cleanTask = cb => {
 	console.log('\nCleaning files ...\n');
 
 	// remove the created files
-	del(['src/**/**']); 
+	del(['src/**/**', 'src']); 
 
 	// signal async completion
 	cb();
