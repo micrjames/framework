@@ -4,7 +4,7 @@ const sass = require('gulp-sass')(require('sass'));
 
 // require config scripts
 const { browsersyncTask, browsersyncReloadTask } = require('./sips/browser-sip'); 
-const { initTask, buildTask, cleanTask } = require('./sips/crud-sip');
+const { initTask, buildTask, cleanInit, cleanTask } = require('./sips/crud-sip');
 const { helpTask } = require('./sips/help-sip');
 
 // run the default tasks
@@ -40,5 +40,6 @@ exports.sass = cb => {
 };
 exports.start = browsersyncTask;
 exports.clean = cleanTask;
+exports.cleanInit = cleanInit;
 exports.build = buildTask;
 exports.help = helpTask;
