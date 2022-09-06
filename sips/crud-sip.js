@@ -23,11 +23,7 @@ exports.initTask = cb => {
     // move over the 'utils' SCSS code files
     src('template/scss/utils/*.scss')
    		.pipe(dest('./src/scss/utils'));
-
-   	// then, remove the unneeded template source files
-    console.log('\nRemoving template source files ...\n');
-	del(['template/**/**', 'template']); 
-
+   
 	// signal async completion	
 	cb();
 };
@@ -51,6 +47,16 @@ exports.buildTask = cb => {
 
 	// signal async completion
 	cb();
+};
+
+// clean the initialization
+exports.cleanInit = cb => {
+    // then, remove the unneeded template source files
+    console.log('\nRemoving template source files ...\n');
+	del(['template/**/**', 'template']); 
+
+    // signal async completion
+    cb();
 };
 
 // clean the scaffold
