@@ -26,7 +26,7 @@ exports.init = series(cb => {
 
 	// signal async completion
 	cb();
-}, initTask, cleanInit);
+}, initTask);
 exports.sass = cb => {
 	console.log('Compiling Sass files ...\n');
 
