@@ -20,6 +20,10 @@ exports.initTask = cb => {
 	src('template/scss/*.scss')
 		.pipe(dest('./src/scss'));
 
+    // move over the 'utils' SCSS code files
+    src('template/scss/utils/*.scss')
+   		.pipe(dest('./src/scss/utils'));
+
    	// then, remove the unneeded template source files
     console.log('\nRemoving template source files ...\n');
 	del(['template/**/**', 'template']); 
