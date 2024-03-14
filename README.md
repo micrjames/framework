@@ -1,5 +1,5 @@
-# Collection
-An array-like object which also implements an iterator.
+# Framework
+A webpack-based framework to create a vanilla html, scss/css, and JavaScript project.
 
 ## Table Of Contents
 * [General Info](#general-info)
