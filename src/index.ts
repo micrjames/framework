@@ -1,2 +1,3 @@
-// add JavaScript code here
+import "./styles/main.scss";
+
 console.log("ts bundling works");

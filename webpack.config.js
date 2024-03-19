@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
    mode: "development",
@@ -54,6 +55,9 @@ module.exports = {
 	  extensions: ['.tsx', '.ts', '.js']
    },
    plugins: [
+	  new CleanWebpackPlugin({
+		 verbose: true
+	  }),
 	  new HtmlWebpackPlugin({
 		 title: 'Webpack App',
 		 filename: 'index.html',
