@@ -14,5 +14,9 @@
 	  "noUnusedLocals": true,
 	  "allowUnreachableCode": false,
 	  "strictNullChecks": true
-   }
+   },
+   "exclude": [
+	  "node_modules",
+	  "tests"                                                             
+   ]
 }
