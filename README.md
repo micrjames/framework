@@ -24,6 +24,7 @@ The project that previously used the gulpjs framework. Now, it uses the webpack 
 * Build the project for development or production.
 
 ## Setup
+Clone the project from github. Then move all the necessary files, excluding README.md, etc as well as other files specific to your project, to the directory containing your project.
 
 ## Usage
 To build the project, use the 'build' command:
@@ -40,6 +41,7 @@ If we'd like, we can write tests for the jest testing framework, by running:
 ```
   npm run test
 ```
+However, testing functionality is restricted to a pre-built project. As only makes sense, building a project is a later stage of the development process.
 ## Project Status
 The project is in an ongoing status. Functionality for either creating a vanilla html, sass, ts project or a react project will be added soon. Also, functionality for defining production or development builds will be implemented in the future.
 
